@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  mock-wits0-server:
+    image: mock_wits0_server_mock-wits0-server:latest
+    container_name: mock-wits0-server
+    ports:
+      - "10021:10021"
+      - "10022:10022"
+      - "10023:10023"
+    restart: unless-stopped
+    networks:
+      - wits0-network
+
+networks:
+  wits0-network:
+    driver: bridge 
