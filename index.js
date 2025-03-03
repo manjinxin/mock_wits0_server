@@ -5,8 +5,8 @@ const path = require('path');
 // 多端口配置
 const SERVERS = [
     { port: 10021, host: '0.0.0.0', name: 'WITS0-Server-1' },
-    // { port: 10022, host: '0.0.0.0', name: 'WITS0-Server-2' },
-    // { port: 10023, host: '0.0.0.0', name: 'WITS0-Server-3' }
+    { port: 10022, host: '0.0.0.0', name: 'WITS0-Server-2' },
+    { port: 10023, host: '0.0.0.0', name: 'WITS0-Server-3' }
 ];
 
 // 读取示例数据
