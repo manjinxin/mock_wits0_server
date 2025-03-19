@@ -2,12 +2,16 @@ version: '3'
 
 services:
   mock-wits0-server:
-    image: mock_wits0_server_mock-wits0-server:latest
+    image: node:20-alpine
     container_name: mock-wits0-server
+    working_dir: /app
+    volumes:
+      - .:/app
     ports:
       - "10021:10021"
       - "10022:10022"
       - "10023:10023"
+    command: sh -c "npm install && node index.js"
     restart: unless-stopped
     networks:
       - wits0-network
