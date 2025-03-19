@@ -44,7 +44,7 @@ function generateWitsLine(baseTime, index) {
       `"&&,0101ZZ-A2,0104${datetime},0105${date},0106${timeStr},010739,` +
       `${formatValue(randomFloat(6707.1, 0.2), "0108")},` +
       `${formatValue(randomFloat(3729.12, 0.1), "0109")},` +
-      `${formatValue(randomFloat(6708.15, 0.05), "0110")},` +
+      `${formatValue(incrementalValue(0, 0.01), "0110")},` +
       `${formatValue(randomFloat(3729.53, 0.05), "0111")},` +
       `${formatValue(randomFloat(8.1, 0.2), "0112")},` +
       `01130,` +
